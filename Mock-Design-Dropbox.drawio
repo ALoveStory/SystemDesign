@@ -1,0 +1,274 @@
+<mxfile host="Electron" modified="2024-05-30T20:14:58.326Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="6pnEVzcoHnyAvRzy-apP" version="24.4.8" type="device">
+  <diagram name="Page-1" id="w4l3Rj4k915JwWUM1oNj">
+    <mxGraphModel dx="2070" dy="1512" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7y3ciI3HEjiSYOCp9bqA-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;DROPBOX&lt;/font&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Dropbox is a cloud based file storage service that allows users to store and share files.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;It provides a secure and reliable way to store and access files from anywhere, on any device.&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry width="1005" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-1" value="&lt;b&gt;&lt;u&gt;&lt;i&gt;APPROACH&lt;/i&gt;&lt;/u&gt;&lt;/b&gt;&amp;nbsp;&lt;div&gt;&lt;ol&gt;&lt;li&gt;REQUIREMENTS&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Functional&lt;/li&gt;&lt;li&gt;non functional&amp;nbsp;&lt;/li&gt;&lt;li&gt;CAP theorem&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;CORE ENTITIES&amp;nbsp;&lt;/li&gt;&lt;ol&gt;&lt;li&gt;API&lt;/li&gt;&lt;li&gt;use core entities for the API&lt;/li&gt;&lt;li&gt;make sure to verify functional requirements are being addressed&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;API&lt;/li&gt;&lt;li&gt;HIGH-LEVEL DESIGN&amp;nbsp;&lt;/li&gt;&lt;li&gt;DEEP DIVES&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="10" y="135" width="440" height="209" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-2" value="&lt;b&gt;FUNCTIONAL REQUIREEMENTS&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;upload a file&amp;nbsp;&lt;/li&gt;&lt;li&gt;download a file&amp;nbsp;&lt;/li&gt;&lt;li&gt;automatically sync files across devices&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;OUT OF SCOPE&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;* roll own blob storage&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;NON-FUNCTIONAL REQUIREMENTS&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Availability &amp;gt;&amp;gt; consistency&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;e.g. someone could download a different version of the file, but the file is always available&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;low latency uploads and downloads&amp;nbsp;&lt;/li&gt;&lt;li&gt;support large files as 50 GB&lt;/li&gt;&lt;ul&gt;&lt;li&gt;resumable uploads (being able to upload and if upload is paused then continue from where left off&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;hide data integrity&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;sync accuracy is high&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="10" y="361" width="619" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-3" value="&lt;b&gt;&lt;u&gt;CORE ENTITIES (DATA MODELS)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;File (raw bytes)&lt;/li&gt;&lt;li&gt;file metadata&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;filename, id, size, etc...&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;users objects&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;API&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;UPLOAD FILES&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;POST /files -&amp;gt; 200&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;body: File and File Metadata&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DOWNLOAD FILES&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;GET /files/fileID -&amp;gt; file and file metadata&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SYNC FILES&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;GET /changes?since={timestamp} -&amp;gt; fileID [ ]&lt;/div&gt;&lt;div&gt;(update)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GET /changes?since={timestamp} -&amp;gt; file metadata&lt;/span&gt;&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="10" y="757" width="316" height="338" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-4" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1146" y="409" width="319" height="387" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-5" value="LOAD BALANCER&lt;div&gt;&amp;amp;&lt;/div&gt;&lt;div&gt;API GATEWAY&lt;/div&gt;&lt;div&gt;- authentication&lt;/div&gt;&lt;div&gt;- rate limiting&amp;nbsp;&lt;/div&gt;&lt;div&gt;- SSL termination&amp;nbsp;&lt;/div&gt;&lt;div&gt;- routing&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1584" y="393" width="120" height="427" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.025;entryY=0.426;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1464" y="581.0999999999999" as="sourcePoint" />
+            <mxPoint x="1584" y="581.002" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1519" y="582.0999999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-8" value="FILE SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1985" y="381" width="133" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.992;entryY=0.464;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-8" target="VCMOuzRKHKZcJa0zki4i-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-10" value="UPLOAD (file, file metadata)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-9" vertex="1" connectable="0">
+          <mxGeometry x="0.0106" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-11" value="&lt;b&gt;&lt;u&gt;&lt;i&gt;HIGH LEVEL DESIGN (NOTES)&lt;/i&gt;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;we want to call upload file to file server&lt;/li&gt;&lt;li&gt;we do not want to store everything in a single database&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;we will use a blob storage like amazon S3 since we can store these bytes cheaply&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;next address get file&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;lookup metadata then get a link to the file , then download from S3&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;next focus is auto sync&lt;/li&gt;&lt;ul&gt;&lt;li&gt;may have logic in the client&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1096" y="9" width="533" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-12" target="VCMOuzRKHKZcJa0zki4i-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-14" value="UPLOAD FILE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-13" vertex="1" connectable="0">
+          <mxGeometry x="-0.0853" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-12" target="VCMOuzRKHKZcJa0zki4i-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-23" value="DOWNLOAD DIRECTLY FROM S3 USING LINK FROM FILE SERVICE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-22" vertex="1" connectable="0">
+          <mxGeometry x="0.014" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-12" value="BLOB STORAGE" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2269" y="283" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-15" target="VCMOuzRKHKZcJa0zki4i-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-17" value="WRITE METADATA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-16" vertex="1" connectable="0">
+          <mxGeometry x="0.1016" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-15" value="FILE METADATA DB" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2323" y="454" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-18" value="FILE METADATA&lt;div&gt;- file id&lt;/div&gt;&lt;div&gt;- file name&lt;/div&gt;&lt;div&gt;- mimetype&lt;/div&gt;&lt;div&gt;- size&amp;nbsp;&lt;/div&gt;&lt;div&gt;- owner id&amp;nbsp;&lt;/div&gt;&lt;div&gt;- s3 link (link back to where the file is at)&lt;/div&gt;&lt;div&gt;- create timestamp&lt;/div&gt;&lt;div&gt;- update timestamp&lt;/div&gt;&lt;div&gt;- ... metadata&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="2413" y="423" width="231" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-19" value="Storing the raw bytes of the files&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="2354" y="299" width="192" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1701" y="610.22" as="sourcePoint" />
+            <mxPoint x="2058" y="456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-21" value="GET (getfile (file id) )" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-20" vertex="1" connectable="0">
+          <mxGeometry x="-0.4831" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-25" value="LOCAL FOLDER" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1185" y="694" width="244" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-26" value="CLIENT APP" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1175" y="423" width="256" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-27" value="&lt;ol&gt;&lt;li&gt;Remote changed&lt;/li&gt;&lt;ol&gt;&lt;li&gt;pull for changes&amp;nbsp;&lt;/li&gt;&lt;li&gt;download the new file and replace&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Local changes&lt;/li&gt;&lt;ol&gt;&lt;li&gt;upload the changed files to remote&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We can use system API which will obseve file events&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Windows API&lt;/div&gt;&lt;div&gt;- filesystemwatcher&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;MacOS API&amp;nbsp;&lt;/div&gt;&lt;div&gt;- FSEvents&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1142" y="798" width="301" height="223" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classicThin;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1969.0000000000005" y="798" as="sourcePoint" />
+            <mxPoint x="1704" y="646.0000000000005" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1837" y="798" />
+              <mxPoint x="1837" y="646" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-30" value="GET CHANGES( )" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.0554" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-28" value="SYNC SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1969" y="694" width="227" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-31" value="LOCAL DATABASE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1181" y="589" width="244" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="VCMOuzRKHKZcJa0zki4i-32" target="VCMOuzRKHKZcJa0zki4i-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-60" value="JUST SEND UPLOAD METADATA WHICH WILL GO TO FILE METADATA DB" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-59" vertex="1" connectable="0">
+          <mxGeometry x="-0.3373" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-32" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1146" y="1902" width="319" height="387" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-33" value="LOAD BALANCER&lt;div&gt;&amp;amp;&lt;/div&gt;&lt;div&gt;API GATEWAY&lt;/div&gt;&lt;div&gt;- authentication&lt;/div&gt;&lt;div&gt;- rate limiting&amp;nbsp;&lt;/div&gt;&lt;div&gt;- SSL termination&amp;nbsp;&lt;/div&gt;&lt;div&gt;- routing&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1584" y="1886" width="120" height="427" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.025;entryY=0.426;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1464" y="2074.1" as="sourcePoint" />
+            <mxPoint x="1584" y="2074.002" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1519" y="2075.1" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-35" value="FILE SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1985" y="1874" width="133" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.992;entryY=0.464;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-35" target="VCMOuzRKHKZcJa0zki4i-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-37" value="UPLOAD (file, file metadata)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-36" vertex="1" connectable="0">
+          <mxGeometry x="0.0106" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-42" target="VCMOuzRKHKZcJa0zki4i-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-39" value="REQUEST A PRE-SIGNED URL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-38" vertex="1" connectable="0">
+          <mxGeometry x="-0.0853" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-42" target="VCMOuzRKHKZcJa0zki4i-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-41" value="DOWNLOAD DIRECTLY FROM S3 USING LINK FROM FILE SERVICE&lt;div&gt;UPLOAD DIRECTLY TO S3 WITH THAT PRE-SIGNED URL&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-40" vertex="1" connectable="0">
+          <mxGeometry x="0.014" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="VCMOuzRKHKZcJa0zki4i-42" target="VCMOuzRKHKZcJa0zki4i-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-63" value="S3 NOTIFICATION&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-62" vertex="1" connectable="0">
+          <mxGeometry x="0.0458" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-42" value="BLOB STORAGE" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2269" y="1776" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-45" target="VCMOuzRKHKZcJa0zki4i-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-44" value="WRITE METADATA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-43" vertex="1" connectable="0">
+          <mxGeometry x="0.1016" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-45" value="FILE METADATA DB (DynamoDB)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2232" y="1947" width="171" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-46" value="FILE METADATA&lt;div&gt;- file id&lt;/div&gt;&lt;div&gt;- folder id&amp;nbsp;&lt;/div&gt;&lt;div&gt;- file name&lt;/div&gt;&lt;div&gt;- mimetype&lt;/div&gt;&lt;div&gt;- size&amp;nbsp;&lt;/div&gt;&lt;div&gt;- owner id&amp;nbsp;&lt;/div&gt;&lt;div&gt;- s3 link (link back to where the file is at)&lt;/div&gt;&lt;div&gt;- create timestamp&lt;/div&gt;&lt;div&gt;- update timestamp&lt;/div&gt;&lt;div&gt;- ... metadata&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- chunks: [&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id as fingerprint,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;status,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;s3 link,&lt;br&gt;&lt;/div&gt;&lt;div&gt;update&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;]&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="2423" y="1926" width="231" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-47" value="Storing the raw bytes of the files&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="2354" y="1792" width="192" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1701" y="2103.2200000000003" as="sourcePoint" />
+            <mxPoint x="2058" y="1949" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-49" value="GET (getfile (file id) )" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-48" vertex="1" connectable="0">
+          <mxGeometry x="-0.4831" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-50" value="LOCAL FOLDER" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1185" y="2187" width="244" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-51" value="CLIENT APP" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1175" y="1916" width="256" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-52" value="&lt;ol&gt;&lt;li&gt;Remote changed&lt;/li&gt;&lt;ol&gt;&lt;li&gt;pull for changes&amp;nbsp;&lt;/li&gt;&lt;li&gt;download the new file and replace&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Local changes&lt;/li&gt;&lt;ol&gt;&lt;li&gt;upload the changed files to remote&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We can use system API which will obseve file events&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Windows API&lt;/div&gt;&lt;div&gt;- filesystemwatcher&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;MacOS API&amp;nbsp;&lt;/div&gt;&lt;div&gt;- FSEvents&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DEEP DIVE ON SYNC&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;sync to be fast&lt;/li&gt;&lt;ol&gt;&lt;li&gt;long pulling no need&amp;nbsp;&lt;/li&gt;&lt;li&gt;adoptive polling&amp;nbsp;&lt;/li&gt;&lt;li&gt;delta sync to only detach changed chunks&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;sync to be consistent&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="778" y="1943" width="324" height="348" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classicThin;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1969.0000000000005" y="2291" as="sourcePoint" />
+            <mxPoint x="1704" y="2139.0000000000005" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1837" y="2291" />
+              <mxPoint x="1837" y="2139" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-54" value="GET CHANGES( )" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VCMOuzRKHKZcJa0zki4i-53" vertex="1" connectable="0">
+          <mxGeometry x="-0.0554" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-55" value="SYNC SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1969" y="2187" width="227" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-56" value="LOCAL DATABASE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1181" y="2082" width="244" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-57" value="&lt;b style=&quot;font-size: 24px;&quot;&gt;&lt;u style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;DEEP DIVE&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;div style=&quot;&quot;&gt;&lt;ul style=&quot;&quot;&gt;&lt;li&gt;Won&#39;t work for large files&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;ADDRESS NON FUNCTIONAL REQUIREMENTS&lt;/li&gt;&lt;li style=&quot;&quot;&gt;we are duplicatinig the uploading path&lt;/li&gt;&lt;ul style=&quot;&quot;&gt;&lt;li&gt;upload to file service then a second time to blob storage&amp;nbsp;&lt;/li&gt;&lt;li&gt;request bodies have a limit set by browsers, api gateways&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;&quot;&gt;chunking helps with low latency&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;maximize amount of available bandwith&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;we can discuss a CDN&lt;/li&gt;&lt;ul style=&quot;&quot;&gt;&lt;li&gt;weigh whether it&#39;s necessary&lt;/li&gt;&lt;li&gt;in this case it is not&amp;nbsp;&lt;/li&gt;&lt;li&gt;benefit is the location&amp;nbsp; or if file is super popular&amp;nbsp;&lt;/li&gt;&lt;li&gt;CDN&#39;s are expensive to manage&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Chunking helps with making most out of bandwith&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Maximize the amount of bandwith that&#39;s being used&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;&quot;&gt;speed up also by transferring fewer bytes&amp;nbsp;&lt;/li&gt;&lt;ul style=&quot;&quot;&gt;&lt;li&gt;using compression (zip)&lt;/li&gt;&lt;li&gt;downside is we have to decompress them&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;&quot;&gt;high data integrity for sync accuracy&amp;nbsp;&lt;/li&gt;&lt;ul style=&quot;&quot;&gt;&lt;li&gt;only get the changed chunks so we are not downloading the entire file to our local folder&amp;nbsp;&lt;/li&gt;&lt;li&gt;download updated chunks&lt;/li&gt;&lt;li&gt;adapted pullling&amp;nbsp;&lt;/li&gt;&lt;li&gt;delta sync to only fetch changed chunks&lt;/li&gt;&lt;li&gt;event bus with a cursor&amp;nbsp;&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="567" y="1410" width="568" height="425" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-58" value="UPLOAD LARGE FILES: 50GB&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;50 GB @ 100 mbps = 1 HR 12 min&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- We&#39;ll use chuncking to chunk files&amp;nbsp;&lt;/div&gt;&lt;div&gt;chunk files on client to 5mb chunks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Fingerprint each chunk: hash (bytes)&amp;nbsp;&lt;/div&gt;&lt;div&gt;unique identifier for each chunk&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1197.5" y="2305" width="216" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-64" value="S3 Nofification will send notification that the file upload is completed then&lt;div&gt;&amp;nbsp;we would send it to the file metadfata and update the status to complete&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We can also use a process called TBV (Trust But Verify)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Another option is to used blob storage cloud provider enable change&amp;nbsp;&lt;/div&gt;&lt;div&gt;data capture e.g. some sort of notification to notify when changes happen&amp;nbsp;&lt;/div&gt;&lt;div&gt;(multi-product load)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="2570" y="1748" width="411" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="ggJ3OenAve7a6nIKl6gz-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VCMOuzRKHKZcJa0zki4i-65" target="VCMOuzRKHKZcJa0zki4i-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-65" value="EVENT BUS (e.g. KAFKA)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1944" y="2534" width="261" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="VCMOuzRKHKZcJa0zki4i-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.462;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="VCMOuzRKHKZcJa0zki4i-65" target="VCMOuzRKHKZcJa0zki4i-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ggJ3OenAve7a6nIKl6gz-3" value="FOLDER ENTITY&lt;div&gt;- sync cursor (as events come in we put them in our event bus)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2699" y="1916" width="352" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="ggJ3OenAve7a6nIKl6gz-4" value="EVENT BUS&amp;nbsp;&lt;div&gt;- linear linked list&lt;/div&gt;&lt;div&gt;- partitioning on user id or folder id&amp;nbsp;&lt;/div&gt;&lt;div&gt;- consolidate changes here / snapshot&amp;nbsp;&lt;/div&gt;&lt;div&gt;- good for data recovery&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2254" y="2565" width="224" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ggJ3OenAve7a6nIKl6gz-5" value="&lt;b&gt;&lt;u&gt;CORE ENTITIES (DATA MODELS)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;File (raw bytes)&lt;/li&gt;&lt;li&gt;file metadata&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;filename, id, size, etc...&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;users objects&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;API&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;UPLOAD FILES&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;POST /files -&amp;gt; 200&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;body: File and File Metadata&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DOWNLOAD FILES&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;GET /files/fileID -&amp;gt; file and file metadata&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SYNC FILES&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;GET /changes?since={timestamp} -&amp;gt; fileID [ ]&lt;/div&gt;&lt;div&gt;(update)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GET /changes?since={timestamp} -&amp;gt; file metadata&lt;/span&gt;&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="2556" width="316" height="338" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
