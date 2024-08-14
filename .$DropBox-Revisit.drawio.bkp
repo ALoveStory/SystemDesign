@@ -1,0 +1,125 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Page-1" id="e0miHUMgwAdwlsRiAfx_">
+    <mxGraphModel dx="2157" dy="1946" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aEdijo8ai81YBhp4VRrm-1" value="DROPBOX&lt;div style=&quot;font-size: 20px;&quot;&gt;Dropbox is a cloud-based file storage service that allows users to store and share files.&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;It provides a secure and reliable way to store and access files from anywhere, on any device.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=3" vertex="1" parent="1">
+          <mxGeometry x="-159" y="-10" width="846" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-2" value="&lt;u&gt;&lt;b&gt;FUNCTIONAL REQUIREMENTS (Core functionalities of system)&lt;/b&gt;&lt;/u&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- upload a file&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- download a file&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- automatically sync files across devices&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Out of Scope:&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;roll own blob storage&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-278" y="105" width="378" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-3" value="&lt;b&gt;&lt;u&gt;NON FUNCTIONAL REQUIREMENTS (qualities of they system)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;CAP Theorem - what will be sacrificing&amp;nbsp;&lt;/li&gt;&lt;li&gt;Prioritizing availability &amp;gt;&amp;gt; consistency&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;in the context of the system, meaning its ok if we upload a file and someone in america goes to fetch the file and it&#39;s an older version of the file&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;low latency uploads and downloads&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;in the context of this system&amp;nbsp;&lt;/li&gt;&lt;li&gt;quantify to as low as possible&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;support large files&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;as large as 50 GB&amp;nbsp;&lt;/li&gt;&lt;li&gt;resumable uploads&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;high data integrity&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;sync accuracy is high&lt;/li&gt;&lt;li&gt;eventual consistency is fine, but integrity of data should be high&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="148" y="113" width="855" height="223" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-4" value="&lt;b&gt;&lt;i&gt;&lt;u&gt;CORE ENTITIES (DATA MODELS)&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;file (raw bytes)&lt;/li&gt;&lt;li&gt;file metadata&amp;nbsp;&lt;/li&gt;&lt;li&gt;users&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;API&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;using core entities as input/ output of core entities&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;POST /files&amp;nbsp;&lt;/div&gt;&lt;div&gt;body: File and FileMetadata&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /files/ fileID&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-&amp;gt; File and File Metadata&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /changes?since={timestamp}&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-&amp;gt; fileId [ ] (list of file ids)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Note:&lt;/div&gt;&lt;div&gt;API&#39;s endpoints are kind of wrong (e.g. upload will be more complex, will return&amp;nbsp;&lt;/div&gt;&lt;div&gt;to update later on).&lt;/div&gt;&lt;div&gt;- careful to not put user in the file, inform interviewer user information will be in request object&amp;nbsp;&lt;/div&gt;&lt;div&gt;so we don&#39;t put it directly in the url&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-271" y="392" width="515" height="377" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-5" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;u&gt;HIGH LEVEL DESIGN&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;i&gt;- goal is to satisfy our functional requirements&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;i&gt;- which our apis also accomplished&amp;nbsp;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;i&gt;- idea thing is to go one by one on our apis and make sure we return appropriate output&amp;nbsp;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="311" y="379" width="521" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-6" value="CLIENT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="408" y="973" width="108" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-8" value="LOAD BALANCER &amp;amp; API GATEWAY&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- handle authentication&amp;nbsp;&lt;/div&gt;&lt;div&gt;- rate limiting&lt;/div&gt;&lt;div&gt;- ssl termination&amp;nbsp;&lt;/div&gt;&lt;div&gt;- routing&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="635" y="846" width="120" height="374" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-9" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=-0.005;entryY=0.433;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="aEdijo8ai81YBhp4VRrm-6" target="aEdijo8ai81YBhp4VRrm-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="542" y="1055" as="sourcePoint" />
+            <mxPoint x="592" y="1005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-10" value="FILE SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="994" y="855" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.985;exitY=0.294;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aEdijo8ai81YBhp4VRrm-8" target="aEdijo8ai81YBhp4VRrm-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="758" y="945" as="sourcePoint" />
+            <mxPoint x="879" y="945" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-12" value="upload(file, fileMetadata)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aEdijo8ai81YBhp4VRrm-11">
+          <mxGeometry x="-0.0748" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-14" value="BLOB STORAGE (S3)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1297" y="796" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-17" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="aEdijo8ai81YBhp4VRrm-10" target="aEdijo8ai81YBhp4VRrm-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1057" y="896" as="sourcePoint" />
+            <mxPoint x="1293" y="836" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-18" value="UPLOAD FILE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aEdijo8ai81YBhp4VRrm-17">
+          <mxGeometry x="-0.0748" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-20" value="FILE METADATA" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1319" y="904" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-21" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=-0.02;entryY=0.412;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="aEdijo8ai81YBhp4VRrm-10" target="aEdijo8ai81YBhp4VRrm-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1124" y="880" as="sourcePoint" />
+            <mxPoint x="1307" y="846" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-22" value="WRITE METADATA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aEdijo8ai81YBhp4VRrm-21">
+          <mxGeometry x="-0.0748" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-23" value="File Metadata&lt;div&gt;- file id&amp;nbsp;&lt;/div&gt;&lt;div&gt;- file name&lt;/div&gt;&lt;div&gt;- mimetype&lt;/div&gt;&lt;div&gt;- size&lt;/div&gt;&lt;div&gt;- s3 link&lt;/div&gt;&lt;div&gt;- ... metadata&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1404" y="898" width="91" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-24" value="Storing the raw bytes of the&amp;nbsp;&lt;div&gt;files&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1377" y="801" width="167" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-25" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.195;entryY=0.963;entryDx=0;entryDy=0;exitX=1.021;exitY=0.568;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="aEdijo8ai81YBhp4VRrm-8" target="aEdijo8ai81YBhp4VRrm-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="753" y="1068" as="sourcePoint" />
+            <mxPoint x="989" y="1008" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-26" value="getFile (fileId)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aEdijo8ai81YBhp4VRrm-25">
+          <mxGeometry x="-0.0748" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-29" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;strokeColor=#b85450;fillColor=#f8cecc;strokeWidth=7;" edge="1" parent="1" source="aEdijo8ai81YBhp4VRrm-28" target="aEdijo8ai81YBhp4VRrm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-28" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;Note: We won&#39;t store the file and file metadata&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;in the same storage unit.&amp;nbsp;&lt;div&gt;&amp;nbsp;We&#39;ll want to store the data&lt;div&gt;in file storage. Blob storage will store large&lt;/div&gt;&lt;div&gt;&amp;nbsp;blobs of data cheaply.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;Once the uplaod is complete&amp;nbsp;&lt;div&gt;this will return with the link&amp;nbsp;&lt;/div&gt;&lt;div&gt;to the file in S3&lt;/div&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1297" y="459" width="307" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-30" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;use file id to lookup file metadata&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;then we return the link directly to client&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;which will then call to the blob storage to fetch directly&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="819" y="556" width="309" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-31" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.325;entryY=0.018;entryDx=0;entryDy=0;curved=0;strokeColor=#b85450;fillColor=#f8cecc;strokeWidth=7;exitX=0.54;exitY=0.91;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="aEdijo8ai81YBhp4VRrm-30" target="aEdijo8ai81YBhp4VRrm-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="972" y="652" as="sourcePoint" />
+            <mxPoint x="859" y="869" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-33" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;curved=1;exitX=0.319;exitY=0.011;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aEdijo8ai81YBhp4VRrm-6" target="aEdijo8ai81YBhp4VRrm-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="456" y="973" as="sourcePoint" />
+            <mxPoint x="1315.7157287525379" y="804.7157287525383" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="459" y="522" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aEdijo8ai81YBhp4VRrm-36" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aEdijo8ai81YBhp4VRrm-33">
+          <mxGeometry x="-0.0295" y="-138" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
