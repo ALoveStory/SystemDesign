@@ -1,28 +1,28 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
   <diagram name="Page-1" id="ZvQZzqbp089TTAOFf1sz">
-    <mxGraphModel dx="1656" dy="1209" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2920" dy="1512" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="pgA_VzdrSxCovMQpNKye-1" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DESIGN TICKETMASTER&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;TICKETMASTER IS AN ONLINE PLTFORM THAT ALLOWS USERS TO PURCHASE TICKETS FOR CONCERTS, SPORT EVENTS,&lt;/div&gt;&lt;div&gt;THEATER, AND OTHER LIVE ENTERTAINMENT. HAS ~100 MILLION DAU (DAILY ACTIVE USERS)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-1" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DESIGN TICKETMASTER&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;TICKETMASTER IS AN ONLINE PLTFORM THAT ALLOWS USERS TO PURCHASE TICKETS FOR CONCERTS, SPORT EVENTS,&lt;/div&gt;&lt;div&gt;THEATER, AND OTHER LIVE ENTERTAINMENT. HAS ~100 MILLION DAU (DAILY ACTIVE USERS)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="6" y="6" width="728" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-2" value="&lt;b&gt;&lt;u&gt;FUNCTIONAL REQUIREMENTS (USERS SHOULD BE ABLE TO)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1. BOOK TICKETS&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. VIEW EVENT (DETAILS, WHO PERFORMING, ETC)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;3. SEARCH FOR EVENTS&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-2" value="&lt;b&gt;&lt;u&gt;FUNCTIONAL REQUIREMENTS (USERS SHOULD BE ABLE TO)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1. BOOK TICKETS&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. VIEW EVENT (DETAILS, WHO PERFORMING, ETC)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;3. SEARCH FOR EVENTS&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1" y="91" width="378" height="113" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-3" value="&lt;b&gt;&lt;u&gt;NON FUNCTIONAL REQUIREMENTS (QUALITIES OF THE SYSTEM)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. CONSISTENCY &amp;gt;&amp;gt; AVAILABILITY&amp;nbsp;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;- NEED TO MAKE SURE NO TICKET IS ASSIGNED TO TWO USERS&amp;nbsp;&lt;/div&gt;&lt;div&gt;- I.E. NO DOUBLE BOOKING&lt;/div&gt;&lt;div&gt;- STRONG CONSISTENCYT FOR BOOKING TICKETS &amp;amp; HIGH AVAILABILITY FOR SEARCH AND VIEW EVENTS (MORE SENIOR ANSWER)&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. READS &amp;gt;&amp;gt; WRITE&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- A LOT MORE PEOPLE VIEWING EVENTS THAN BOOKING&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. SCALABILITY TO HANDLE SURGES FROM POPULAR EVENTS&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-3" value="&lt;b&gt;&lt;u&gt;NON FUNCTIONAL REQUIREMENTS (QUALITIES OF THE SYSTEM)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. CONSISTENCY &amp;gt;&amp;gt; AVAILABILITY&amp;nbsp;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;- NEED TO MAKE SURE NO TICKET IS ASSIGNED TO TWO USERS&amp;nbsp;&lt;/div&gt;&lt;div&gt;- I.E. NO DOUBLE BOOKING&lt;/div&gt;&lt;div&gt;- STRONG CONSISTENCYT FOR BOOKING TICKETS &amp;amp; HIGH AVAILABILITY FOR SEARCH AND VIEW EVENTS (MORE SENIOR ANSWER)&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. READS &amp;gt;&amp;gt; WRITE&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- A LOT MORE PEOPLE VIEWING EVENTS THAN BOOKING&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. SCALABILITY TO HANDLE SURGES FROM POPULAR EVENTS&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="454" y="90" width="827" height="185" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-4" value="&lt;b&gt;&lt;u&gt;OUT OF SCOPE&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;1. GDPR COMPLIANCE&amp;nbsp;&lt;/div&gt;&lt;div&gt;2. FAULT TOLERANCE&lt;/div&gt;&lt;div&gt;3. ETC ETC&lt;/div&gt;&lt;div&gt;- NOTE: YOU CAN ASK IF THERE&#39;S ANYTHING OUT OF SCOPE&amp;nbsp;&lt;/div&gt;&lt;div&gt;INTERVIEWER WOULD PREFER TO PRIORITIZE&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-4" value="&lt;b&gt;&lt;u&gt;OUT OF SCOPE&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;1. GDPR COMPLIANCE&amp;nbsp;&lt;/div&gt;&lt;div&gt;2. FAULT TOLERANCE&lt;/div&gt;&lt;div&gt;3. ETC ETC&lt;/div&gt;&lt;div&gt;- NOTE: YOU CAN ASK IF THERE&#39;S ANYTHING OUT OF SCOPE&amp;nbsp;&lt;/div&gt;&lt;div&gt;INTERVIEWER WOULD PREFER TO PRIORITIZE&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="6" y="275" width="376" height="98" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-5" value="&lt;b&gt;&lt;u&gt;CORE ENTITIES&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;- USE THESE TO BUILD YOUR APIS AND HIGH LEVEL DESIGN&lt;/div&gt;&lt;div&gt;- IDEA OF WHAT TABLE ENTITIES WE WOULD NEED&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. EVENTS&amp;nbsp;&lt;/div&gt;&lt;div&gt;2. VENUE&lt;/div&gt;&lt;div&gt;3. PERFORMER&lt;/div&gt;&lt;div&gt;4. TICKET&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;API (APPLICATION PROGRAM INTERFACE)&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- USER FACING API CLIENT WILL MAKE TO SATISFY FUNCTIONAL REQUIREMENTS&amp;nbsp;&lt;/div&gt;&lt;div&gt;- LOOK BACVK AT FUNCTIONAL REQUIREMENTS TO SATISFY EACH ONE AND SHOULD EXCHANGE/ RETURN CORE ENTITIES&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. VIEW EVENT API&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /event/:eventid --&amp;gt; EVENT &amp;amp; VENUE &amp;amp; PERFORMER &amp;amp; TICKET [ ]&amp;nbsp;&lt;/div&gt;&lt;div&gt;- EVERYTHING NEEDED TO VIEW AN EVENT LOAD THE PAGE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. SEARCH FOR EVENT API&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /search ? term = { term } &amp;amp; location = { location } &amp;amp; type = { type } ... -- &amp;gt; PARTTIAL EVENTS [ ]&lt;/div&gt;&lt;div&gt;- RETURN LIMITED AMOUNT OF INFORMATION FROM THE EVENT&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. BOOKING A TICKET API&amp;nbsp;&lt;/div&gt;&lt;div&gt;- THIS COULD BE A TWO FACE/ STEP PROCESS INCLUDING A TIME&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /booking / reserve&lt;/div&gt;&lt;div&gt;header: JWT session token&lt;/div&gt;&lt;div&gt;body: {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;ticketId&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PUT /booking / confirm&amp;nbsp;&lt;/div&gt;&lt;div&gt;header: JWT session token&amp;nbsp;&lt;/div&gt;&lt;div&gt;body: {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ticketId,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;paymentDetails (strip)&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-5" value="&lt;b&gt;&lt;u&gt;CORE ENTITIES&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;- USE THESE TO BUILD YOUR APIS AND HIGH LEVEL DESIGN&lt;/div&gt;&lt;div&gt;- IDEA OF WHAT TABLE ENTITIES WE WOULD NEED&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. EVENTS&amp;nbsp;&lt;/div&gt;&lt;div&gt;2. VENUE&lt;/div&gt;&lt;div&gt;3. PERFORMER&lt;/div&gt;&lt;div&gt;4. TICKET&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;API (APPLICATION PROGRAM INTERFACE)&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- USER FACING API CLIENT WILL MAKE TO SATISFY FUNCTIONAL REQUIREMENTS&amp;nbsp;&lt;/div&gt;&lt;div&gt;- LOOK BACVK AT FUNCTIONAL REQUIREMENTS TO SATISFY EACH ONE AND SHOULD EXCHANGE/ RETURN CORE ENTITIES&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. VIEW EVENT API&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /event/:eventid --&amp;gt; EVENT &amp;amp; VENUE &amp;amp; PERFORMER &amp;amp; TICKET [ ]&amp;nbsp;&lt;/div&gt;&lt;div&gt;- EVERYTHING NEEDED TO VIEW AN EVENT LOAD THE PAGE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. SEARCH FOR EVENT API&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /search ? term = { term } &amp;amp; location = { location } &amp;amp; type = { type } ... -- &amp;gt; PARTTIAL EVENTS [ ]&lt;/div&gt;&lt;div&gt;- RETURN LIMITED AMOUNT OF INFORMATION FROM THE EVENT&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. BOOKING A TICKET API&amp;nbsp;&lt;/div&gt;&lt;div&gt;- THIS COULD BE A TWO FACE/ STEP PROCESS INCLUDING A TIME&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /booking / reserve&lt;/div&gt;&lt;div&gt;header: JWT session token&lt;/div&gt;&lt;div&gt;body: {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;ticketId&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PUT /booking / confirm&amp;nbsp;&lt;/div&gt;&lt;div&gt;header: JWT session token&amp;nbsp;&lt;/div&gt;&lt;div&gt;body: {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ticketId,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;paymentDetails (strip)&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1" y="418" width="741" height="631" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-6" value="&lt;b&gt;&lt;u&gt;HIGH LEVEL DESIGN&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;- CREATE A SIMPLE DESIGN THAT SATISFIES OUR FUNCTIONAL REQUIREMENTS&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="712" y="336" width="487" height="41" as="geometry" />
+        <mxCell id="pgA_VzdrSxCovMQpNKye-6" value="&lt;b&gt;&lt;u&gt;HIGH LEVEL DESIGN&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;- CREATE A SIMPLE DESIGN THAT SATISFIES OUR FUNCTIONAL REQUIREMENTS&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="850" y="341" width="487" height="41" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-7" target="pgA_VzdrSxCovMQpNKye-8">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="pgA_VzdrSxCovMQpNKye-7" target="pgA_VzdrSxCovMQpNKye-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1058" y="707" />
@@ -30,145 +30,328 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-7" value="CLIENT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-7" value="CLIENT" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="850" y="677" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-8" value="&lt;b&gt;API GATEWAY&amp;nbsp;&lt;/b&gt;&lt;div&gt;- MAIN RESPONSIBILITY IS TO TAKE API REQUESTS AND ROUTE TO RIGHT SERVICE&amp;nbsp;&lt;/div&gt;&lt;div&gt;- AUTHENTICATION&lt;/div&gt;&lt;div&gt;- RATE LIMITING&amp;nbsp;&lt;/div&gt;&lt;div&gt;- ROUTING&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-8" value="&lt;b&gt;API GATEWAY&amp;nbsp;&lt;/b&gt;&lt;div&gt;- MAIN RESPONSIBILITY IS TO TAKE API REQUESTS AND ROUTE TO RIGHT SERVICE&amp;nbsp;&lt;/div&gt;&lt;div&gt;- AUTHENTICATION&lt;/div&gt;&lt;div&gt;- RATE LIMITING&amp;nbsp;&lt;/div&gt;&lt;div&gt;- ROUTING&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1081" y="533" width="120" height="353" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-10" value="EVENT CRUD SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-10" value="EVENT CRUD SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1402" y="670" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-8" target="pgA_VzdrSxCovMQpNKye-10">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-8" target="pgA_VzdrSxCovMQpNKye-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1201" y="617" as="sourcePoint" />
             <mxPoint x="1251" y="567" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-18" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;1. GET /event/:eventid&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pgA_VzdrSxCovMQpNKye-11">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-18" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;1. GET /event/:eventid&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pgA_VzdrSxCovMQpNKye-11" vertex="1" connectable="0">
           <mxGeometry x="-0.1676" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-13" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-10">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-13" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-10" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1523" y="561.5" as="sourcePoint" />
             <mxPoint x="1623" y="561.5" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-15" value="DATABASE (POSTGRESS)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-15" value="DATABASE (POSTGRESS)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1620" y="456" width="207" height="203" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-16" value="DATABASE STORE CORE ENTITIES&amp;nbsp;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;EVENT&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- VENUE ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- PERFORMERID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- NAME&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- DESCRIPTION&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- TICKET [ ]&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;VENUE&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- LOCATION&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- SEATMAP&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;PERFORMER&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;...&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;TICKET&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- SEAT&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- PRICE&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- EVENTID&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- STATUS: AVAILABLE, RESERVED, BOOKED&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- BOOKED USER&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- RESERVED TIMESTAMP&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-16" value="DATABASE STORE CORE ENTITIES&amp;nbsp;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;EVENT&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- VENUE ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- PERFORMERID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- NAME&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- DESCRIPTION&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- TICKET [ ]&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;VENUE&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- LOCATION&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- SEATMAP&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;PERFORMER&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;...&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;TICKET&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- SEAT&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- PRICE&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- EVENTID&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- STATUS: AVAILABLE, RESERVED, BOOKED&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- BOOKED USER&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- RESERVED TIMESTAMP&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" parent="1" vertex="1">
           <mxGeometry x="1844" y="407" width="228" height="336" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-19" value="SEARCH SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-19" value="SEARCH SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1380" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-20" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=0.992;exitY=0.326;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-8" target="pgA_VzdrSxCovMQpNKye-19">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-20" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=0.992;exitY=0.326;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-8" target="pgA_VzdrSxCovMQpNKye-19" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1237" y="565" as="sourcePoint" />
             <mxPoint x="1337" y="565" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-24" value="2.&amp;nbsp;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;GET /search ? term = { term }&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pgA_VzdrSxCovMQpNKye-20">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-24" value="2.&amp;nbsp;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;GET /search ? term = { term }&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pgA_VzdrSxCovMQpNKye-20" vertex="1" connectable="0">
           <mxGeometry x="-0.302" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-21" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;entryX=0;entryY=0.384;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-19" target="pgA_VzdrSxCovMQpNKye-15">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-21" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;entryX=0;entryY=0.384;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-19" target="pgA_VzdrSxCovMQpNKye-15" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1495" y="512" as="sourcePoint" />
             <mxPoint x="1595" y="512" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-23" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;* SIMPLE SEARCH QUERY&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&amp;nbsp;TO READ FROM DB&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-23" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;* SIMPLE SEARCH QUERY&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&amp;nbsp;TO READ FROM DB&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" parent="1" vertex="1">
           <mxGeometry x="1434" y="345" width="183" height="94" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-25" value="BOOKING SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-25" value="BOOKING SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1404" y="806" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-26" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.992;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-8" target="pgA_VzdrSxCovMQpNKye-25">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-26" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.992;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-8" target="pgA_VzdrSxCovMQpNKye-25" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1200" y="790" as="sourcePoint" />
             <mxPoint x="1300" y="790" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-27" value="3. RESERVE REQUEST&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;POST /booking / reserve&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pgA_VzdrSxCovMQpNKye-26">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-27" value="3. RESERVE REQUEST&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;POST /booking / reserve&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pgA_VzdrSxCovMQpNKye-26" vertex="1" connectable="0">
           <mxGeometry x="-0.3141" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-28" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=0.975;exitY=0.367;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-25" target="pgA_VzdrSxCovMQpNKye-15">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-28" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=0.975;exitY=0.367;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-25" target="pgA_VzdrSxCovMQpNKye-15" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1525" y="811" as="sourcePoint" />
             <mxPoint x="1625" y="811" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-29" value="UPDATE OUR DATABASE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pgA_VzdrSxCovMQpNKye-28">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-29" value="UPDATE OUR DATABASE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pgA_VzdrSxCovMQpNKye-28" vertex="1" connectable="0">
           <mxGeometry x="-0.1208" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-30" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;entryX=0;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.856;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-8" target="pgA_VzdrSxCovMQpNKye-25">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-30" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;entryX=0;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.856;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-8" target="pgA_VzdrSxCovMQpNKye-25" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1180" y="848" as="sourcePoint" />
             <mxPoint x="1280" y="848" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-31" value="3B. BOOK CONFIRM REQUEST&lt;div&gt;&lt;div style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;PUT /booking / confirm&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pgA_VzdrSxCovMQpNKye-30">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-31" value="3B. BOOK CONFIRM REQUEST&lt;div&gt;&lt;div style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;PUT /booking / confirm&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pgA_VzdrSxCovMQpNKye-30" vertex="1" connectable="0">
           <mxGeometry x="-0.378" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-32" value="STRIPE (EXTERNAL PAYMENT SYSTEM" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-32" value="STRIPE (EXTERNAL PAYMENT SYSTEM" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1396" y="959" width="167" height="123" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-35" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-25" target="pgA_VzdrSxCovMQpNKye-32">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-35" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-25" target="pgA_VzdrSxCovMQpNKye-32" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1381" y="901" as="sourcePoint" />
             <mxPoint x="1481" y="901" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-36" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.875;entryY=0.967;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-32" target="pgA_VzdrSxCovMQpNKye-25">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-36" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.875;entryY=0.967;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-32" target="pgA_VzdrSxCovMQpNKye-25" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1470" y="910" as="sourcePoint" />
             <mxPoint x="1570" y="910" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-37" value="CRON JOB&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;dashed=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-37" value="CRON JOB&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="1877" y="951" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-38" value="INTRODUCED CRON JOB RESPONSIBLE FROM QUERY&amp;nbsp;&lt;div&gt;THE DB FOR EVERY TICKET THAT&#39;S&amp;nbsp;&lt;/div&gt;&lt;div&gt;IN RESERVED STATUS&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;IT WILL SET THE STATUS TO AVAILABLE&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(OK APPROACH FOR MID LEVEL, BUT HAS BOTTLENECK AS A TICKET COULD BE&lt;/div&gt;&lt;div&gt;HELD TOO LONG WHEN IT SHOULD BE AVAILABLE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;BETTER APPROACH IS TO USE A DISTRIBUTED LOCK - TICKET LOCK USING ANY&amp;nbsp;&lt;/div&gt;&lt;div&gt;MEMERY CACHE&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-38" value="INTRODUCED CRON JOB RESPONSIBLE FROM QUERY&amp;nbsp;&lt;div&gt;THE DB FOR EVERY TICKET THAT&#39;S&amp;nbsp;&lt;/div&gt;&lt;div&gt;IN RESERVED STATUS&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;IT WILL SET THE STATUS TO AVAILABLE&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(OK APPROACH FOR MID LEVEL, BUT HAS BOTTLENECK AS A TICKET COULD BE&lt;/div&gt;&lt;div&gt;HELD TOO LONG WHEN IT SHOULD BE AVAILABLE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;BETTER APPROACH IS TO USE A DISTRIBUTED LOCK - TICKET LOCK USING ANY&amp;nbsp;&lt;/div&gt;&lt;div&gt;MEMERY CACHE&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="2002" y="895" width="488" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-39" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.712;entryY=0.964;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-37" target="pgA_VzdrSxCovMQpNKye-15">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-39" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.712;entryY=0.964;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;" parent="1" source="pgA_VzdrSxCovMQpNKye-37" target="pgA_VzdrSxCovMQpNKye-15" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1696" y="825" as="sourcePoint" />
             <mxPoint x="1796" y="825" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-40" value="TICKET LOCK (REDIS)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-40" value="TICKET LOCK (REDIS)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="1678" y="835" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-41" value="( TICKET ID : TRUE }. - TTL 10 MINUTES&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-41" value="( TICKET ID : TRUE }. - TTL 10 MINUTES&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1620" y="920" width="245" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="pgA_VzdrSxCovMQpNKye-42" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="pgA_VzdrSxCovMQpNKye-25" target="pgA_VzdrSxCovMQpNKye-40">
+        <mxCell id="pgA_VzdrSxCovMQpNKye-42" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="pgA_VzdrSxCovMQpNKye-25" target="pgA_VzdrSxCovMQpNKye-40" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1527" y="858" as="sourcePoint" />
             <mxPoint x="1627" y="858" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-1" value="&lt;b&gt;&lt;u&gt;DEEP DIVE&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- FIND 1 TO 3 PLACES TO SHOW DEPTH&amp;nbsp;&lt;/div&gt;&lt;div&gt;- REFERENCE YOUR NON FUNCTIONAL REQUIREMENTS&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. ORIGINALLY DIDNT HAVE LOW LATENCY SEARCH&lt;/div&gt;&lt;div&gt;- WE CAN USE ELASTICSEARCH WHICH IS MORE&amp;nbsp;&lt;/div&gt;&lt;div&gt;EFFICIENT THAN DOING A SEARCH BY A SQL&amp;nbsp;&lt;/div&gt;&lt;div&gt;QUERY&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- QUICKER LOOKUP&amp;nbsp;&lt;/div&gt;&lt;div&gt;- SUPPORT FOR GEO-SPATIAL SEARCHING&amp;nbsp;&lt;/div&gt;&lt;div&gt;- DURABILITY CONCERNS, NOT BEST PRACTICE TO USE&amp;nbsp;&lt;/div&gt;&lt;div&gt;AS PRIMARY DATA SOURCE&amp;nbsp;&lt;/div&gt;&lt;div&gt;- WE NEED A WAY TO MAKE SURE CHANGES ALSO REFLECT&amp;nbsp;&lt;/div&gt;&lt;div&gt;IN ELASTICSEARCH&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- HOW TO MAKE POPULAR EVENTS FASTER&amp;nbsp;&lt;/div&gt;&lt;div&gt;WE COULD USE CACHING BUT THE SCOPE OF THIS DESIGN&lt;/div&gt;&lt;div&gt;WE ARE NOT USING ANY RANKING&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-402" y="1512" width="373" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-4" value="CLIENT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="9" y="1793.5" width="102" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-5" value="&lt;b&gt;API GATEWAY&amp;nbsp;&lt;/b&gt;&lt;div&gt;- MAIN RESPONSIBILITY IS TO TAKE API REQUESTS AND ROUTE TO RIGHT SERVICE&amp;nbsp;&lt;/div&gt;&lt;div&gt;- AUTHENTICATION&lt;/div&gt;&lt;div&gt;- RATE LIMITING&amp;nbsp;&lt;/div&gt;&lt;div&gt;- ROUTING&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="432" y="1665" width="120" height="353" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-6" value="EVENT CRUD SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="938" y="1755" width="207" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-7" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-5" target="vMDWVeRWOKm3tUhF2Es3-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="912" y="1729" as="sourcePoint" />
+            <mxPoint x="962" y="1679" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-8" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;1. GET /event/:eventid&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vMDWVeRWOKm3tUhF2Es3-7">
+          <mxGeometry x="-0.1676" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-9" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-6" target="vMDWVeRWOKm3tUhF2Es3-10">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1234" y="1673.5" as="sourcePoint" />
+            <mxPoint x="1323" y="1674" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-10" value="DATABASE (POSTGRESS)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1769" y="1722" width="207" height="203" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-11" value="DATABASE STORE CORE ENTITIES&amp;nbsp;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;EVENT&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- VENUE ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- PERFORMERID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- NAME&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- DESCRIPTION&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- TICKET [ ]&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;VENUE&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- LOCATION&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- SEATMAP&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;PERFORMER&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;...&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;TICKET&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- ID&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- SEAT&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- PRICE&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- EVENTID&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- STATUS: AVAILABLE, RESERVED, BOOKED&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- BOOKED USER&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;- RESERVED TIMESTAMP&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="2026" y="1676" width="228" height="336" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-12" value="SEARCH SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="927" y="1472" width="205" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-13" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=0.992;exitY=0.326;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-5" target="vMDWVeRWOKm3tUhF2Es3-12">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="948" y="1677" as="sourcePoint" />
+            <mxPoint x="1048" y="1677" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-14" value="2.&amp;nbsp;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;GET /search ? term = { term }&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vMDWVeRWOKm3tUhF2Es3-13">
+          <mxGeometry x="-0.302" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-15" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-12" target="vMDWVeRWOKm3tUhF2Es3-36">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1206" y="1624" as="sourcePoint" />
+            <mxPoint x="1306" y="1624" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-16" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;INTRODUCE A SEARCH OPTIMIZED&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;DATABASE&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1022" y="1353" width="215" height="119" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-17" value="BOOKING SERVICE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="942" y="2027" width="223" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-18" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.992;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-5" target="vMDWVeRWOKm3tUhF2Es3-17">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="911" y="1902" as="sourcePoint" />
+            <mxPoint x="1011" y="1902" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-19" value="3. RESERVE REQUEST&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;POST /booking / reserve&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vMDWVeRWOKm3tUhF2Es3-18">
+          <mxGeometry x="-0.3141" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-20" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;exitX=0.975;exitY=0.367;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-17" target="vMDWVeRWOKm3tUhF2Es3-10">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1236" y="1923" as="sourcePoint" />
+            <mxPoint x="1336" y="1923" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-21" value="UPDATE OUR DATABASE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vMDWVeRWOKm3tUhF2Es3-20">
+          <mxGeometry x="-0.1208" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-22" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=0;entryX=0;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.856;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-5" target="vMDWVeRWOKm3tUhF2Es3-17">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="891" y="1960" as="sourcePoint" />
+            <mxPoint x="991" y="1960" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-23" value="3B. BOOK CONFIRM REQUEST&lt;div&gt;&lt;div style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;PUT /booking / confirm&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vMDWVeRWOKm3tUhF2Es3-22">
+          <mxGeometry x="-0.378" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-24" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.342;entryY=0.134;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-17" target="vMDWVeRWOKm3tUhF2Es3-32">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1092" y="2013" as="sourcePoint" />
+            <mxPoint x="1176" y="2082" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-25" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.875;entryY=0.967;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="vMDWVeRWOKm3tUhF2Es3-17" source="vMDWVeRWOKm3tUhF2Es3-32">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1201" y="2078" as="sourcePoint" />
+            <mxPoint x="1281" y="2022" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-26" value="CRON JOB&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="2370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-27" value="INTRODUCED CRON JOB RESPONSIBLE FROM QUERY&amp;nbsp;&lt;div&gt;THE DB FOR EVERY TICKET THAT&#39;S&amp;nbsp;&lt;/div&gt;&lt;div&gt;IN RESERVED STATUS&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;IT WILL SET THE STATUS TO AVAILABLE&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(OK APPROACH FOR MID LEVEL, BUT HAS BOTTLENECK AS A TICKET COULD BE&lt;/div&gt;&lt;div&gt;HELD TOO LONG WHEN IT SHOULD BE AVAILABLE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;BETTER APPROACH IS TO USE A DISTRIBUTED LOCK - TICKET LOCK USING ANY&amp;nbsp;&lt;/div&gt;&lt;div&gt;MEMERY CACHE&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1981" y="2260" width="488" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-28" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.712;entryY=0.964;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-26" target="vMDWVeRWOKm3tUhF2Es3-10">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1407" y="1937" as="sourcePoint" />
+            <mxPoint x="1507" y="1937" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-29" value="TICKET LOCK (REDIS)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1465.5" y="2313" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-30" value="( TICKET ID : TRUE }. - TTL 10 MINUTES&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1413" y="2417" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-31" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-17" target="vMDWVeRWOKm3tUhF2Es3-29">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1238" y="1970" as="sourcePoint" />
+            <mxPoint x="1338" y="1970" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-32" value="STRIPE (EXTERNAL PAYMENT SYSTEM" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="942" y="2279" width="167" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-34" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.018;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-4" target="vMDWVeRWOKm3tUhF2Es3-5">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="288" y="1826" as="sourcePoint" />
+            <mxPoint x="388" y="1826" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-36" value="ELEASTICSEARRCH&lt;div&gt;(AWS OPENSEARCH)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1452.21" y="1338" width="205.79" height="197.9" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-38" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.269;entryY=0.939;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-6" target="vMDWVeRWOKm3tUhF2Es3-36">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1263" y="1706" as="sourcePoint" />
+            <mxPoint x="1363" y="1706" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-39" value="IDEALLY WRITE HERE ALONG WITH REGULAR DB&amp;nbsp;&lt;div&gt;WOULD HAVE TO HANDLE MAKING SURE NOT TO WRITE&amp;nbsp;&lt;/div&gt;&lt;div&gt;IF WRITE FAILS WITH PRIMARY DB&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vMDWVeRWOKm3tUhF2Es3-38">
+          <mxGeometry x="-0.1732" y="-2" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-40" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.925;entryY=0.762;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.299;exitY=0.017;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="1" source="vMDWVeRWOKm3tUhF2Es3-10" target="vMDWVeRWOKm3tUhF2Es3-36">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1573" y="1636" as="sourcePoint" />
+            <mxPoint x="1673" y="1636" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-41" value="ALSO USE A CDC (ALTERNATIVE) STREAM TO MAKE&amp;nbsp;&lt;div&gt;SURE WE ARE UPDATING&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vMDWVeRWOKm3tUhF2Es3-40">
+          <mxGeometry x="0.1068" y="-1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-42" value="OPTIONS TO MAKE SEARCH FASTER&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. NODE QUERY CACHING&amp;nbsp;&lt;/div&gt;&lt;div&gt;2. ADDING A CACHE&amp;nbsp;&lt;/div&gt;&lt;div&gt;3. (PREFERRED) USE SYSTEM CDN&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="1272" width="232" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="vMDWVeRWOKm3tUhF2Es3-43" value="CDN&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="219" y="1783.5" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
